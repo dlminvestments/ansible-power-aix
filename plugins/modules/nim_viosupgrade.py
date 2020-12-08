@@ -834,7 +834,7 @@ def main():
         module.log(results['msg'])
     else:
         target_errored = [key for key, val in results['status'].items() if 'FAILURE' in val]
-        if len(target_errored):
+        if target_errored:
             results['msg'] = 'NIM upgradeios {0} operation failed for {1}. See status and meta for details.'.format(module.params['action'], target_errored)
             module.log(results['msg'])
             module.fail_json(**results)
