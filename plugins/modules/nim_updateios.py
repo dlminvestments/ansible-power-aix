@@ -1009,7 +1009,7 @@ def main():
         module.log(results['msg'])
     else:
         target_errored = [key for key, val in results['status'].items() if 'FAILURE' in val]
-        if len(target_errored):
+        if target_errored:
             results['msg'] = "NIM updateios operation failed for {0}. See status and meta for details.".format(target_errored)
             module.log(results['msg'])
             module.fail_json(**results)
