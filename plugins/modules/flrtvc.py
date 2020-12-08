@@ -291,7 +291,6 @@ def wait_all():
     """
     Do nothing
     """
-    pass
 
 
 def increase_fs(dest):

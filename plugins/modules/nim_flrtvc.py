@@ -330,7 +330,6 @@ def wait_all():
     """
     Do nothing
     """
-    pass
 
 
 def compute_c_rsh_rc(machine, rc, stdout):
