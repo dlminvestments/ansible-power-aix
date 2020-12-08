@@ -475,7 +475,6 @@ def wait_all():
     """
     Do nothing
     """
-    pass
 
 
 def param_one_of(one_of_list, required=True, exclusive=True):
